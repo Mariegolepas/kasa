@@ -1,0 +1,12 @@
+.Error404 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 288px;
+    line-height: 142.6%;
+    /* or 411px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FF6060;
+}
