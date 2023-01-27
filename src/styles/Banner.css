@@ -1,0 +1,7 @@
+.banner {
+    max-width: 1240px;
+    height: 223px;
+    border-radius: 25px;
+    border: 1px solid;
+    mix-blend-mode: darken;
+}
