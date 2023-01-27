@@ -1,11 +1,24 @@
-function Card({ label, title, picture }) {
+import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
+import '../../styles/Card.css'
+ 
+function Card({ id, title, picture }) {
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', padding: 15 }}>
-            <span>{label}</span>
-            <img src={picture} alt="freelance" height={80} width={80} />
-            <span>{title}</span>
+        <div className='card'>
+            <Link to={'/logement/'+ id}>
+                <img src={picture} alt="illustration du logement" className='card__img'/>
+                <span className='card__title'>
+                    {title}
+                </span>
+            </Link>
         </div>
     )
+}
+ 
+Card.propTypes = {
+    label: PropTypes.string,
+    title: PropTypes.string,
+    picture: PropTypes.string,
 }
  
 export default Card

@@ -1,0 +1,19 @@
+.card {
+    background-color: #FF6060;
+    padding: 15px;
+    width: 30%;
+    /* height: 30%; */
+    gap: 45px;
+    border-radius: 10px;
+};
+
+.card__img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.card__title {
+    position: absolute;
+    z-index: 1;
+    bottom: 5px;
+}
