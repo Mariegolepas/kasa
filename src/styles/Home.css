@@ -1,0 +1,21 @@
+.home {
+    max-width: 1220px;
+    margin: auto;
+}
+
+.home__banner{
+    position:absolute;
+}
+
+.home__banner__image {
+    mix-blend-mode: darken;
+    position: relative;
+    z-index: 0;
+}
+
+.home__banner__title {
+    font-weight: 500;
+    font-size: 48px;
+    position: relative;
+    z-index: 1;
+}
