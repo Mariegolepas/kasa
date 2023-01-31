@@ -1,7 +1,9 @@
 .banner {
     max-width: 1240px;
-    height: 223px;
+    height: 220px;
     border-radius: 25px;
-    border: 1px solid;
-    mix-blend-mode: darken;
+    /* border: 1px solid; */
+    margin: auto;
+    padding: auto;
+    position: relative;
 }
