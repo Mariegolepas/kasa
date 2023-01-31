@@ -2,5 +2,9 @@
     background: #F7F7F7;
     border-radius: 25px;
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-top: 43px;
+    padding-top: 46px;
+    /* gap: 25px; */
 }

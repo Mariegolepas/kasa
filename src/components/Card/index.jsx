@@ -5,8 +5,9 @@ import '../../styles/Card.css'
 function Card({ id, title, picture }) {
     return (
         <div className='card'>
-            <Link to={'/logement/'+ id}>
-                <img src={picture} alt="illustration du logement" className='card__img'/>
+            <Link to={'/logement/'+ id} className='card__link'>
+                <img src={picture} alt="Illustration du logement" className='card__img'/>
+                <span className='card__shadow'></span>
                 <span className='card__title'>
                     {title}
                 </span>
