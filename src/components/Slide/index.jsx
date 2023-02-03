@@ -10,26 +10,28 @@ function Slide({pictures}) {
     const nbImages = pictures.length;
 
     useEffect(() => {
-        if (nbImages < count+1) {
+        if (nbImages <= count+1) {
             setCount(0)
-        } else if (nbImages <= 0) {
+        } /* else if (nbImages <= 0) {
             setCount(nbImages - 1)
-        } else if (count === 0) {
+        } */ else if (count < 0) {
             setCount(nbImages - 1)
-        }
+        } /* else if (count === nbImages) {
+            setCount(0)
+        } */
     }, [count, nbImages])
     
     return (
         <section className='slide'>
             <img src={pictures[count]} alt="Illustration du logement" className='slide__img'/>
-            <span className='slide__index'>
-                {count+1}/{nbImages}</span>
-            <span onClick={() => setCount(count-1)} className='slide__arraw left'>
+            {nbImages <= 1 ? <span></span> : <span className='slide__index'>
+                {count+1}/{nbImages}</span>}
+                {nbImages <= 1 ? <button className='slide__arraw left'></button> : <button onClick={() => setCount(count-1)} className='slide__arraw left'>
                 <img src={ArrawLeft} alt="arraw left"/>
-            </span>
-            <span onClick={() => setCount(count+1)} className='slide__arraw right'>
+            </button>}
+            {nbImages <= 1 ? <button className='slide__arraw right'></button> : <button onClick={() => setCount(count+1)} className='slide__arraw right'>
                 <img src={ArrawRight} alt="arraw right"/>
-            </span>
+            </button>}
         </section>
     );
 }
