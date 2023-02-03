@@ -2,9 +2,9 @@ import '../../styles/Carrousel.css'
 
 function Carrousel({children}) {
     return (
-        <div className='carrousel'>
+        <main className='carrousel'>
             {children}
-        </div>
+        </main>
     );
 }
 
