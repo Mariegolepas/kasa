@@ -17,7 +17,7 @@ function Card({ id, title, picture }) {
 }
  
 Card.propTypes = {
-    label: PropTypes.string,
+    id: PropTypes.string,
     title: PropTypes.string,
     picture: PropTypes.string,
 }
