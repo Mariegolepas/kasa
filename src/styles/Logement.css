@@ -1,0 +1,63 @@
+.logement {
+    max-width: 1240px;
+}
+
+.tag {
+    display: flex;
+}
+
+.logement__title {
+    font-size: 26px;
+    font-weight: 400;
+    color: #FF6060;
+}
+
+.logement__location {
+    font-size: 18px;
+    font-weight: 400;
+    color: #FF6060;
+    margin-bottom: 15px;
+}
+
+.collapses {
+    display: flex;
+}
+
+.logement__header {
+    display: flex;
+}
+
+.logement__leftpart {
+    width: 66%;
+    background-color: aqua;
+}
+
+.logement__rightpart {
+    width: 33%;
+    background-color: yellow;
+    flex-direction: column;
+}
+
+.logement__people {
+    display: flex;
+    justify-content: flex-end;
+    color: #FF6060;
+    font-size: 18px;
+    height: 65px;
+}
+
+.logement__people__name {
+    display: flex;
+    width: 25%;
+    text-align: right;
+    align-items: center;
+    text-overflow:ellipsis;
+    overflow-wrap: break-word;
+    padding-right: 10px;
+}
+
+.logement__people__pic {
+    height: 64px;
+    width: 64px;
+    border-radius: 32px;
+}
