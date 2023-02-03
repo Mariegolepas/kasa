@@ -21,10 +21,17 @@ function Collapse({title, size, infos}) {
                 </span>
             </div>
 
-            <div className={open ? 'collapse__open size'+size : 'collapse__invisible'} >
-                <span className='collapse__open__txt'>
-                    {infos}
-                </span>
+            <div className={open ? 'collapse__open' : 'collapse__invisible'} >
+                <div className='collapse__open__txt'>
+                {Array.isArray(infos) ? infos.map((info) =>
+                    <li className='collapse__open__txt__info' key='info'>
+                        {info}
+                    </li>) :
+                    <p>
+                        {infos}
+                    </p>
+                }
+                </div>
             </div>
         </div>
     );
