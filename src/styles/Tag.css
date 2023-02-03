@@ -1,0 +1,15 @@
+.tag__div {
+    background: #FF6060;
+    border-radius: 10px;
+    width: 115px;
+    height: 25px;
+    margin: 5px;
+}
+
+.tag__text {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding: 3px;
+}
