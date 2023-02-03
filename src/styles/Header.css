@@ -13,20 +13,20 @@
     background-color:white;
 } */
 
-.header__navbar, nav {
+.header__navbar {
     display: flex;
     justify-content: flex-end;
     height: 100%;
     width: 1220px;
 }
 
-.header__navbar__list, ul {
+.header__navbar__list {
     display: flex;
     justify-content: space-around;
     gap: 50px
 }
 
-.header__navbar__list__bloc, li {
+.header__navbar__list__bloc {
     display: flex;
     height: 100%;
     list-style-type: none;
