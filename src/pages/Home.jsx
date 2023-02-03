@@ -4,39 +4,37 @@ import Card from '../components/Card/index'
 import Banner from '../components/Banner/index'
 import Carrousel from '../components/Carrousel'
 import '../styles/Home.css'
+import Mountain from '../assets/mountain.png'
 
-function Logements() {
+function Home() {
     return (
         <div className='home'>
-            <Banner>
+            <Banner
+                key={'Banner1'}
+                image={Mountain}
+                alt={'Falaises'}
+                title={'Chez vous, partout et ailleurs'}
+            />
+            {/* <Banner>
                 <div className='home__banner'>
-                    <img src='../assets/mountain.png' alt='Falaises' className='home__banner__image' />
+                    <img src={Mountain} alt='Falaises' className='home__banner__image' />
                     <h1 className='home__banner__title'>
                         Chez vous, partout et ailleurs
                     </h1>
                 </div>
-            </Banner>
+            </Banner> */}
+
             <Carrousel>
-                {logements.map((Logements) => (
+                {logements.map((logement) => (
                     <Card
-                        key={Logements.id}
-                        id={Logements.id}
-                        picture={Logements.cover}
-                        title={Logements.title}
+                        key={logement.id}
+                        id={logement.id}
+                        picture={logement.cover}
+                        title={logement.title}
                     />))}
             </Carrousel>
         </div>
     )
 }
 
-export default Logements
-
-/* {<h1>Page d'accueil</h1>
-            {logements.map((logement, index) => (
-                <Card
-                    key={`${logement.name}-${index}`}
-                    label={logement.jobTitle}
-                    picture={logement.picture}
-                    title={logement.name}
-                />
-            ))}} */
+export default Home
