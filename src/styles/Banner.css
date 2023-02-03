@@ -6,4 +6,28 @@
     margin: auto;
     padding: auto;
     position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.banner__image {
+    object-fit: cover;
+    border-radius: 25px;
+    width: 100%;
+    filter: brightness(70%);
+}
+
+.banner__title {
+    font-weight: 500;
+    font-size: 48px;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    color: white;
+    margin:0;
 }
