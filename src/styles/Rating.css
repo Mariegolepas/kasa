@@ -1,0 +1,12 @@
+.rating {
+    display: flex;
+    gap: 2px;
+}
+
+.rating__color {
+    background-color: #FF6060;
+}
+
+.rating__grey {
+    background-color: #E3E3E3;
+}
