@@ -1,12 +1,13 @@
+//Import our style for this page
 import '../../styles/Banner.css'
-import PropTypes from 'prop-types'
 
-Banner.propTypes = {
-    image: PropTypes.string,
-    title: PropTypes.string,
-    alt: PropTypes.string,
-}
-
+/**
+ * Banner Component which will be used on homepage and about page
+ * @param {*} image for banner's cover
+ * @param {*} title for page's title
+ * @param {*} alt for image's alt
+ * @returns our components with 3 props needed
+ */
 function Banner({image, title, alt}) {
     return (
         <div className='banner'>
@@ -17,13 +18,5 @@ function Banner({image, title, alt}) {
         </div>
     );
 }
-
-/* function Banner({children}) {
-    return (
-        <div className='banner'>
-            {children}
-        </div>
-    );
-} */
 
 export default Banner;
