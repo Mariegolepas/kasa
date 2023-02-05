@@ -61,3 +61,7 @@
     width: 64px;
     border-radius: 32px;
 }
+
+.logement__rating {
+    height: fit-content;
+}

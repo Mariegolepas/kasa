@@ -6,6 +6,7 @@ import '../styles/Logement.css'
 import { useParams, /* useNavigate */ } from 'react-router-dom'
 import logements from '../datas/logements.json'
 import Error from '../components/Error'
+import Rating from '../components/Rating'
 
 function Logement() {
     const params = useParams();
@@ -14,8 +15,6 @@ function Logement() {
     const tags = logement.tags;
 
     //const navigate = useNavigate()
-
-    console.log(logement);
 
     if (logement !== undefined) {
         return (
@@ -41,6 +40,11 @@ function Logement() {
                         <div className='logement__people'>
                             <div className='logement__people__name'>{logement.host.name}</div>
                             <img src={logement.host.picture} alt="avatar de l'host" className='logement__people__pic' />
+                        </div>
+                        <div className='logement__rating'>
+                            <Rating 
+                                score={logement.rating}
+                            />
                         </div>
                     </div>
                 </div>
