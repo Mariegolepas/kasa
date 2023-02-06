@@ -23,15 +23,6 @@ function Home() {
                 alt={'Falaises'}
                 title={'Chez vous, partout et ailleurs'}
             />
-            {/* <Banner>
-                <div className='home__banner'>
-                    <img src={Mountain} alt='Falaises' className='home__banner__image' />
-                    <h1 className='home__banner__title'>
-                        Chez vous, partout et ailleurs
-                    </h1>
-                </div>
-            </Banner> */}
-
             <Carrousel>
                 {logements.map((logement) => (
                     <Card
