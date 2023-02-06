@@ -1,22 +1,29 @@
+//Import React
 import React from 'react'
+//Import all our components
+import Rating from '../components/Rating'
 import Tag from '../components/Tag'
 import Collapse from '../components/Collapse'
 import Slide from '../components/Slide'
+//Import our style for this page
 import '../styles/Logement.css'
-import { useParams, /* useNavigate */ } from 'react-router-dom'
+//Import components from React Router v6
+import { useParams, Navigate } from 'react-router-dom'
+//Import our datas
 import logements from '../datas/logements.json'
-import Error from '../components/Error'
-import Rating from '../components/Rating'
 
+
+/**
+ * Our Location page with all components displayed on
+ * @returns 
+ */
 function Logement() {
     const params = useParams();
     const id = params.id;
     const logement = logements.find((e) => e.id === id);
-    const tags = logement.tags;
-
-    //const navigate = useNavigate()
 
     if (logement !== undefined) {
+        const tags = logement.tags;
         return (
             <div className='logement'>
                 <Slide
@@ -66,7 +73,7 @@ function Logement() {
             </div>
         );
     } else {
-        return <Error />;
+        return <Navigate to="/error" replace={true} />;
     }
 
     

@@ -1,9 +1,17 @@
+//Import React
 import React from 'react'
+//Import our components
 import Collapse from '../components/Collapse'
 import Banner from '../components/Banner'
+//Import our style for this page
 import '../styles/Logement.css'
+//Import Banner's image
 import Lake from '../assets/lake-mountains.png'
 
+/**
+ * our About page with all components
+ * @returns 
+ */
 function About() {
     return (
         <div className='about'>
