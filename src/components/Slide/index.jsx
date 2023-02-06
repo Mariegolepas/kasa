@@ -34,10 +34,10 @@ function Slide({pictures}) {
                         {count+1}/{nbImages}
                     </span>
                     <button onClick={() => setCount(count-1)} className='slide__arraw left'>
-                        <img src={ArrawLeft} alt="arraw left"/>
+                        <img src={ArrawLeft} alt="arraw left" className='arraw'/>
                     </button>
                     <button onClick={() => setCount(count+1)} className='slide__arraw right'>
-                        <img src={ArrawRight} alt="arraw right"/>
+                        <img src={ArrawRight} alt="arraw right" className='arraw'/>
                     </button></>}
         </section>
     );
