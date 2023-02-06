@@ -3,8 +3,6 @@ import React from 'react'
 //Import our components
 import Collapse from '../components/Collapse'
 import Banner from '../components/Banner'
-//Import our style for this page
-import '../styles/Logement.css'
 //Import Banner's image
 import Lake from '../assets/lake-mountains.png'
 
@@ -14,11 +12,13 @@ import Lake from '../assets/lake-mountains.png'
  */
 function About() {
     return (
-        <div className='about'>
+        <div>
             <Banner 
+                key={'Banner2'}
                 image={Lake}
                 title={''}
                 alt={'Lac avec des montagnes autour'}
+                cat={'about'}
             />
 
             <Collapse
