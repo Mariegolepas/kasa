@@ -1,6 +1,12 @@
+//Import Link component from React Router v6
 import { Link } from 'react-router-dom'
+//Import our style for this page
 import '../../styles/Error.css'
 
+/**
+ * Error Component, for our 404's error page
+ * @returns our Component
+ */
 function Error() {
     return (
         <div className='error'>
