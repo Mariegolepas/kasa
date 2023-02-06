@@ -22,6 +22,7 @@ function Home() {
                 image={Mountain}
                 alt={'Falaises'}
                 title={'Chez vous, partout et ailleurs'}
+                cat={'home'}
             />
             <Carrousel>
                 {logements.map((logement) => (
