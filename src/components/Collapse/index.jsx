@@ -1,8 +1,19 @@
+//Import our style for this page
 import '../../styles/Collapse.css'
-import ArrawDown from '../../assets/arraw-down.svg'
+//Import useState from React to toggle open
 import { useState } from 'react';
+//Import our two arraws
+import ArrawDown from '../../assets/arraw-down.svg'
 import ArrawUp from '../../assets/arraw-up.svg'
 
+
+/**
+ * Collapse component which will be used on about page and on location's place
+ * @param {*} title for the name displayed on the collapse while close
+ * @param {*} size permit to modulate our component for both use, with a specific class
+ * @param {*} infos set our information to display while open
+ * @returns 
+ */
 function Collapse({title, size, infos}) {
     const [open, setOpen] = useState(false);
 
@@ -24,7 +35,7 @@ function Collapse({title, size, infos}) {
             <div className={open ? 'collapse__open' : 'collapse__invisible'} >
                 <div className='collapse__open__txt'>
                 {Array.isArray(infos) ? infos.map((info) =>
-                    <li className='collapse__open__txt__info' key='info'>
+                    <li className='collapse__open__txt__info' key={info} >
                         {info}
                     </li>) :
                     <p>
