@@ -1,8 +1,6 @@
 .banner {
     max-width: 1240px;
     height: 220px;
-    border-radius: 25px;
-    /* border: 1px solid; */
     margin: auto;
     padding: auto;
     position: relative;
@@ -30,4 +28,28 @@
     z-index: 2;
     color: white;
     margin:0;
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        max-width: 768px;
+        height: 111px;
+    }
+
+    .banner__image {
+        border-radius: 10px;
+    }
+
+    .banner__title {
+        font-size: 24px;
+        text-align: left;
+        left: 10px;
+        word-wrap: break-word;
+        width: 73%;
+        padding: 10px;
+    }
+
+    .catabout {
+        height: 223px;
+    }
 }

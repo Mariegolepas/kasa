@@ -3,16 +3,15 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    text-align: center;
     color: #FF6060;
-    /* height: 600px; */
 }
 
 .error__title {
     font-weight: 700;
     font-size: 288px;
-    line-height: 142.6%; /* or 411px */
+    line-height: 142.6%;
     align-items: center;
-    text-align: center;
     margin: auto;
     margin-top: 0%;
     margin-bottom: 0%;
@@ -33,5 +32,22 @@
 }
 
 .error__link:hover {
-    filter:brightness(60%);
+    filter:brightness(80%);
+}
+
+@media screen and (max-width: 768px) { 
+    .error__title {
+        font-size: 96px;
+        margin-top: 95px;
+    }
+
+    .error__description {
+        font-size: 18px;
+        width: 80%;
+    }
+
+    .error__link {
+        font-size: 14px;
+        margin-bottom: 175px;
+    }
 }

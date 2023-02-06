@@ -1,12 +1,12 @@
 .rating {
     display: flex;
-    gap: 2px;
+    justify-content: flex-end;
+    gap: 5px;
+    height: 30px;
 }
 
-.rating__color {
-    background-color: #FF6060;
-}
-
-.rating__grey {
-    background-color: #E3E3E3;
+@media screen and (max-width: 768px) { 
+    .rating {
+        height: 15px;
+    }
 }
