@@ -35,10 +35,10 @@ function Collapse({title, size, infos}) {
             <div className={open ? 'collapse__open' : 'collapse__invisible'} >
                 <div className='collapse__open__txt'>
                 {Array.isArray(infos) ? infos.map((info) =>
-                    <li className='collapse__open__txt__info' key={info} >
+                    <li className={'collapse__open__txt__info infos'+size} key={info} >
                         {info}
                     </li>) :
-                    <p>
+                    <p className={'infos'+size}>
                         {infos}
                     </p>
                 }
